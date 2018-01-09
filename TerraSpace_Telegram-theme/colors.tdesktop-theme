@@ -45,7 +45,7 @@ slideFadeOutShadowFg: windowShadowFg; // Анимация слайда из ча
 imageBg: #000000; // Фон изображения, когда изображение фона меньше необходимого
 imageBgTransparent: #ffffff; // Отображение изображения с прозрачностью, где прозрачность не нужна (?)
 
-// widgets
+// Виджеты
 activeButtonBg: windowBgActive;
 activeButtonBgOver: #f77375; //Button hover (like profile pic and etc)
 activeButtonBgRipple: #f88182; //Ripple button above
@@ -72,14 +72,16 @@ outlineButtonBgOver: lightButtonBgOver;
 outlineButtonOutlineFg: windowBgActive;
 outlineButtonBgRipple: lightButtonBgRipple;
 
-menuBg: windowBg;
-menuBgOver: windowBgOver;
-menuBgRipple: windowBgRipple;
+
+// Всплывающее меню
+menuBg: windowBg; // Фон всплывающего меню
+menuBgOver: windowBgOver; // Пункт при наведении ^
+menuBgRipple: windowBgRipple; // Эффект ряби ^
 menuIconFg: #BFBDC1; // Цвет кнопок меню, иконок и прочего в чате
 menuIconFgOver: #E15461; // Цвет кнопок меню при наведении
-menuSubmenuArrowFg: #373737;
-menuFgDisabled: #cccccc;
-menuSeparatorFg: #f1f1f1;
+menuSubmenuArrowFg: #373737; // Стрелка, иконка субменю (like in message field context menu in case of RTL system language)
+menuFgDisabled: #cccccc; // Неактивный текст пункта субменю (like unavailable items in message field context menu)
+menuSeparatorFg: #f1f1f1; // Сепаратор субменю (like in message field context menu)
 
 scrollBarBg: #00000053;
 scrollBarBgOver: #0000007a;
@@ -89,8 +91,8 @@ scrollBgOver: #0000001a;
 smallCloseIconFg: #c7c7c7;
 smallCloseIconFgOver: #a3a3a3;
 
-radialFg: windowFgActive;
-radialBg: #00000056;
+radialFg: windowFgActive; // Полоса радиальной загрузки медиафайлов
+radialBg: #E1546156; // Фон^
 
 placeholderFg: windowSubTextFg;
 placeholderFgActive: #aaaaaa;
@@ -101,9 +103,9 @@ checkboxFg: #FBFCFF; // Цвет чекбоксов, иконочек подме
 sliderBgInactive: #e1eaef;
 sliderBgActive: windowBgActive;
 
-tooltipBg: #eef2f5;
-tooltipFg: #5d6c80;
-tooltipBorderFg: #c9d1db;
+tooltipBg: #19212A; // Фон подсказки
+tooltipFg: #FBFCFF; // Текст ^
+tooltipBorderFg: #3D4651; // Обводка ^
 
 // Кастомные заголовки Windows и MacOS
 titleBg: windowBgOver;
@@ -189,7 +191,7 @@ dialogsVerifiedIconBg: windowBgActive; // ?Иконка прочитанного
 dialogsVerifiedIconFg: windowFgActive; // ?Иконка прочитанного сообщения в списке контактов (Чекнутая?)
 dialogsSendingIconFg: #BFBDC1; // ?Цвет отправленного сообщения в списке контактов
 dialogsUnreadBg: windowBgActive; // Иконка непрочитанных сообщений
-dialogsUnreadBgMuted: #FBFCFF; // В забаненных чатах ^
+dialogsUnreadBgMuted: #19212A; // В забаненных чатах ^
 dialogsUnreadFg: windowFgActive; // Цвет непрочитанных сообщений в списке контактов
 
 dialogsBgOver: windowBgOver;
@@ -232,10 +234,10 @@ emojiPanBg: windowBg; // Фон панели эмоджи
 emojiPanCategories: #19212A; // windowBg; // Цвет панели эмоджи (нижняя панель и фон)
 emojiPanHeaderFg: windowSubTextFg;
 emojiPanHeaderBg: #fffffff2; // emojiPanBg;
-stickerPanDeleteBg: #000000cc;
-stickerPanDeleteFg: windowFgActive;
-stickerPreviewBg: #ffffffb0;
-historyTextInFg: #f7f7f7;  // Цвет мего текста
+stickerPanDeleteBg: #000000cc; // Фон кнопочки "х" - удаления стикера
+stickerPanDeleteFg: windowFgActive; // Цвет ^
+stickerPreviewBg: #19212Ab1; // Стикеры и гиф фон предпросмотра
+historyTextInFg: #f7f7f7;  // Цвет мего текстаmenuBg
 historyTextOutFg: #f7f7f7; //Цвет моего текста при пересылке
 historyCaptionInFg: historyTextInFg;
 historyCaptionOutFg: historyTextOutFg;
@@ -335,7 +337,7 @@ msgFileThumbLinkOutFgSelected: lightButtonFgOver; // Цвет моей выбр�
 
 //Аудио
 msgFileInBg: windowBgActive; // Цвет анимации загрузки аудио файла собеседника
-msgFileInBgOver: #4eade3; // При наведении мыши ^
+msgFileInBgOver: #FBFCFF; // При наведении мыши ^
 msgFileInBgSelected: #FFFFFF; // Выбранный аудиофайл при загрузке
 msgFileOutBg: #ffffff; // Цвет анимации загрузки моего аудио файла
 msgFileOutBgOver: #ffffff; // При наведении ^
@@ -343,8 +345,8 @@ msgFileOutBgSelected: #ffffff; // Выбранный мой аудиофайл
 
 msgFile1Bg: #ffffff;
 msgFile1BgDark: #ffffff;
-msgFile1BgOver: #5294c4;
-msgFile1BgSelected: #5099d0;
+msgFile1BgOver: #3D4651b1; // Фон (кружочек) расшаренных файлов без превью при наведении
+msgFile1BgSelected: #3D4651b1; // Выбранные ^
 msgFile2Bg: #61b96e;
 msgFile2BgDark: #4da859;
 msgFile2BgOver: #44a050;
@@ -406,13 +408,21 @@ notificationSampleUserpicFg: windowBgActive;
 notificationSampleCloseFg: #d7d7d7; // windowSubTextFg;
 notificationSampleTextFg: #d7d7d7; // windowSubTextFg;
 notificationSampleNameFg: #939393; // windowSubTextFg;
-mainMenuBg: windowBg;
-mainMenuCoverBg: dialogsBgActive;
-mainMenuCoverFg: windowFgActive;
-mediaPlayerBg: windowBg;
-mediaPlayerActiveFg: windowBgActive;
-mediaPlayerInactiveFg: sliderBgInactive;
-mediaPlayerDisabledFg: #9dd1ef;
+
+// Главное меню
+mainMenuBg: windowBg; // Фон главного меню
+mainMenuCoverBg: dialogsBgActive; // Фон верха ^
+mainMenuCoverFg: windowFgActive; // Фон текста сверху ^
+mainMenuCloudFg: activeButtonFg; // Цвет эконки заметок
+mainMenuCloudBg: #3D4651; // Фон ^
+
+// Цвет аудиоплеера
+mediaPlayerBg: windowBg; // Фон аудиоплеера
+mediaPlayerActiveFg: windowBgActive; // Цвет прогресса (отыгранной части)
+mediaPlayerInactiveFg: sliderBgInactive; // Еще неотыгранной части ^ с наведением мыши
+mediaPlayerDisabledFg: #f88182; // Цвет прогрузки аудиофайла
+
+
 mediaviewFileBg: windowBg;
 mediaviewFileNameFg: windowFg;
 mediaviewFileSizeFg: windowSubTextFg;
@@ -444,3 +454,20 @@ mediaviewPlaybackIconFgOver: mediaviewPlaybackActiveOver;
 mediaviewTransparentBg: #ffffff;
 mediaviewTransparentFg: #cccccc;
 notificationBg: windowBg;
+
+// Загрузка Аудио
+historyFileInIconFg: #e3405390; // inbox file without thumbnail (like audio file) download arrow icon
+historyFileInIconFgSelected: #FBFCFF; // inbox selected file without thumbnail (like audio file) download arrow icon
+
+historyFileInRadialFg: #e3405390; // inbox file without thumbnail (like audio file) radial download animation line
+historyFileInRadialFgSelected: #FBFCFF; // inbox selected file without thumbnail (like audio file) radial download animation line
+historyFileOutIconFg: #e3405390; // outbox file without thumbnail (like audio file) download arrow icon
+historyFileOutIconFgSelected: #FBFCFF; // outbox selected file without thumbnail (like audio file) download arrow icon
+historyFileOutRadialFg: #e3405390; // outbox file without thumbnail (like audio file) radial download animation line
+historyFileOutRadialFgSelected: #FBFCFF; // outbox selected file without thumbnail (like audio file) radial download animation line
+
+// Загрузка Фото/Видео
+historyFileThumbIconFg: #e3405390; // Стрелка загрузки (Фото/Видео)
+historyFileThumbIconFgSelected: #FBFCFF; // selected file with thumbnail (or photo / video) download arrow icon
+historyFileThumbRadialFg: #e3405390; // Полоса прогрузки (Фото/Видео)
+historyFileThumbRadialFgSelected: #FBFCFF; // selected file with thumbnail (or photo / video) radial download animation line
